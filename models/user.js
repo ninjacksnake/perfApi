@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     password: "string",
     email: "string",
     isAdmin: Boolean,
-    permissions: [],
+    permissions: Array,
 });
 
 const User = mongoose.model("user", userSchema);
